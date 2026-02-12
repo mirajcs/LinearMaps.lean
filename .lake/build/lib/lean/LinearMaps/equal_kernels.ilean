@@ -1,0 +1,1 @@
+{"decls":{},"directImports":[["Mathlib.LinearAlgebra.Dimension.Finrank",false,false,false],["Mathlib.LinearAlgebra.FreeModule.Finite.Basic",false,false,false],["Mathlib.LinearAlgebra.Projection",false,false,false]],"module":"LinearMaps.equal_kernels","references":{},"version":5}

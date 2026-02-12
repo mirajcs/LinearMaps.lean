@@ -1,0 +1,18 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs": null,
+ "log":
+ [{"message": "Documentation indexing", "level": "info"},
+  {"message":
+   ".> /Users/mirajcs/git/LinearMaps/.lake/packages/doc-gen4/.lake/build/bin/doc-gen4 index --build /Users/mirajcs/git/LinearMaps/.lake/build",
+   "level": "trace"}],
+ "inputs":
+ [["/Users/mirajcs/git/LinearMaps/.lake/packages/doc-gen4/.lake/build/bin/doc-gen4",
+   "efd8ffe875d589a8"],
+  ["<nil>", "7b9f5ff346c3f45f"],
+  ["<collection>",
+   [["/Users/mirajcs/git/LinearMaps/.lake/build/doc/LinearMaps/equal_kernels.html",
+     "5153e00fda9d22a6"],
+    ["/Users/mirajcs/git/LinearMaps/.lake/build/doc/LinearMaps.html",
+     "41fc4d4b52454f6f"]]]],
+ "depHash": "208e7ecef9f45085"}

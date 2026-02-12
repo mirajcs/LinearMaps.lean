@@ -1,0 +1,1 @@
+{"declarations":[],"imports":["Init","Mathlib.LinearAlgebra.Dimension.Finrank","Mathlib.LinearAlgebra.FreeModule.Finite.Basic","Mathlib.LinearAlgebra.Projection"],"instances":[],"name":"LinearMaps.equal_kernels"}

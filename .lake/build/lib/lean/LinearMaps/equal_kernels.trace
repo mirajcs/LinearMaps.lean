@@ -1,13 +1,21 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["c341af22eac6ff89.olean"],
-  "i": "b746a9b2c08a2d1d.ilean",
-  "c": "b522a7da31c4d485.c"},
+ {"o": ["8cc6808bbed1f9cc.olean"],
+  "i": "116a5ea486c37b81.ilean",
+  "c": "74ebc23ec1bac8cd.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=/Users/mirajcs/git/LinearMaps/.lake/packages/batteries/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/Qq/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/aesop/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/importGraph/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/plausible/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/MD4Lean/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/BibtexQuery/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/UnicodeBasic/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/Cli/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/mathlib/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/packages/doc-gen4/.lake/build/lib/lean:/Users/mirajcs/git/LinearMaps/.lake/build/lib/lean /Users/mirajcs/.elan/toolchains/leanprover--lean4---v4.27.0/bin/lean /Users/mirajcs/git/LinearMaps/LinearMaps/equal_kernels.lean -o /Users/mirajcs/git/LinearMaps/.lake/build/lib/lean/LinearMaps/equal_kernels.olean -i /Users/mirajcs/git/LinearMaps/.lake/build/lib/lean/LinearMaps/equal_kernels.ilean -c /Users/mirajcs/git/LinearMaps/.lake/build/ir/LinearMaps/equal_kernels.c --setup /Users/mirajcs/git/LinearMaps/.lake/build/ir/LinearMaps/equal_kernels.setup.json --json",
-   "level": "trace"}],
+   "level": "trace"},
+  {"message":
+   "LinearMaps/equal_kernels.lean:20:0: This line exceeds the 100 character limit, please shorten it!\n\nNote: This linter can be disabled with `set_option linter.style.longLine false`",
+   "level": "warning"},
+  {"message":
+   "LinearMaps/equal_kernels.lean:20:117: extra space in the source\n\nThis part of the code\n  'V ]\n\n'\nshould be written as\n  'V]'\n\n\nNote: This linter can be disabled with `set_option linter.style.whitespace false`",
+   "level": "warning"},
+  {"message": "LinearMaps/equal_kernels.lean:22:8: declaration uses 'sorry'",
+   "level": "warning"}],
  "inputs":
  [["LinearMaps.equal_kernels:deps",
    [["deps",
@@ -22,10 +30,10 @@
          "782ae8427c06dc54"],
         ["Mathlib.LinearAlgebra.FreeModule.Finite.Basic:importAllArts",
          "c0268b12016e391c"],
-        ["Mathlib.LinearAlgebra.Projection transitive imports (legacy)",
-         "7dda91eefa5e52b4"],
-        ["Mathlib.LinearAlgebra.Projection:importAllArts",
-         "907b1409dd60ff39"]]]]],
+        ["Mathlib.LinearAlgebra.FiniteDimensional.Defs transitive imports (legacy)",
+         "df095121453b5010"],
+        ["Mathlib.LinearAlgebra.FiniteDimensional.Defs:importAllArts",
+         "eb9bc777c65ffa64"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
@@ -34,11 +42,11 @@
   ["Lean 4.27.0, commit db93fe1608548721853390a10cd40580fe7d22ae",
    "9a2be90fd35343e5"],
   ["/Users/mirajcs/git/LinearMaps/LinearMaps/equal_kernels.lean",
-   "6164a16c4901049c"],
+   "f31237303ba2c945"],
   ["options",
    [["-DmaxSynthPendingDepth=3", "c78e353d34de85d4"],
     ["-Dweak.linter.mathlibStandardSet=true", "8a155799906f2b42"],
     ["-DrelaxedAutoImplicit=false", "74a2b5546b55be80"],
     ["-Dpp.unicode.fun=true", "9b94070140457fab"]]],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "f1131429a121a50f"}
+ "depHash": "0b188b17cb5c9425"}

@@ -1,6 +1,6 @@
 // Lean compiler output
 // Module: LinearMaps.equal_kernels
-// Imports: public import Init public import Mathlib.LinearAlgebra.Dimension.Finrank public import Mathlib.LinearAlgebra.FreeModule.Finite.Basic public import Mathlib.LinearAlgebra.Projection
+// Imports: public import Init public import Mathlib.LinearAlgebra.Dimension.Finrank public import Mathlib.LinearAlgebra.FreeModule.Finite.Basic public import Mathlib.LinearAlgebra.FiniteDimensional.Defs
 #include <lean/lean.h>
 #if defined(__clang__)
 #pragma clang diagnostic ignored "-Wunused-parameter"
@@ -16,7 +16,7 @@ extern "C" {
 lean_object* initialize_Init(uint8_t builtin);
 lean_object* initialize_mathlib_Mathlib_LinearAlgebra_Dimension_Finrank(uint8_t builtin);
 lean_object* initialize_mathlib_Mathlib_LinearAlgebra_FreeModule_Finite_Basic(uint8_t builtin);
-lean_object* initialize_mathlib_Mathlib_LinearAlgebra_Projection(uint8_t builtin);
+lean_object* initialize_mathlib_Mathlib_LinearAlgebra_FiniteDimensional_Defs(uint8_t builtin);
 static bool _G_initialized = false;
 LEAN_EXPORT lean_object* initialize_LinearMaps_LinearMaps_equal__kernels(uint8_t builtin) {
 lean_object * res;
@@ -31,7 +31,7 @@ lean_dec_ref(res);
 res = initialize_mathlib_Mathlib_LinearAlgebra_FreeModule_Finite_Basic(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
-res = initialize_mathlib_Mathlib_LinearAlgebra_Projection(builtin);
+res = initialize_mathlib_Mathlib_LinearAlgebra_FiniteDimensional_Defs(builtin);
 if (lean_io_result_is_error(res)) return res;
 lean_dec_ref(res);
 return lean_io_result_mk_ok(lean_box(0));

@@ -1,0 +1,11 @@
+{"plugins": [],
+ "package": "LinearMaps",
+ "options":
+ {"weak.linter.mathlibStandardSet": true,
+  "relaxedAutoImplicit": false,
+  "pp.unicode.fun": true,
+  "maxSynthPendingDepth": 3},
+ "name": "LinearMaps.invertibility_result1",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}

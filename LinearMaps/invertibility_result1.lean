@@ -86,3 +86,36 @@ theorem stu_eq_id_invertible (S T U : Module.End K V) (h : S * T * U = 1) :
     hS.mul_left_cancel (by rw [← mul_assoc, h_STU, one_mul, mul_one])
   exact ⟨by rw [← mul_assoc]; exact h_TUS,
          by rw [mul_assoc];  exact h_UST⟩
+
+
+/-- The previous result fails for infinite-dimensional spaces.
+    Counterexample: V = ℕ → K (all K-valued sequences),
+    S = left shift  (S f)(n) = f(n+1),
+    T = identity,
+    U = right shift (U f)(0) = 0, (U f)(n+1) = f(n).
+    Then S * T * U = 1, but T * (U * S) = R * L ≠ 1:
+    (R * L)(fun _ => 1) evaluates to 0 at position 0, not 1. -/
+example : ∃ (S T U : Module.End K (ℕ → K)), S * T * U = 
+  1 ∧ ¬(T * (U * S) = 1 ∧ (U * S) * T = 1) := by
+  -- S = left shift
+  let L : Module.End K (ℕ → K) :=
+    { toFun    := fun f n => f (n + 1)
+      map_add' := fun _ _ => rfl
+      map_smul' := fun _ _ => rfl }
+  -- U = right shift
+  let R : Module.End K (ℕ → K) :=
+    { toFun    := fun f n => Nat.casesOn n 0 f
+      map_add' := fun f g => by funext n; cases n <;> simp
+      map_smul' := fun c f => by funext n; cases n <;> simp }
+  refine ⟨L, 1, R, ?_, ?_⟩
+  · -- L * 1 * R = 1 : left shift ∘ right shift = identity
+    ext f n
+    simp only [Module.End.mul_apply, Module.End.one_apply]
+    rfl
+  · -- 1 * (R * L) ≠ 1 because (R * L)(fun _ => 1) 0 = 0 ≠ 1
+    rintro ⟨h, -⟩
+    rw [one_mul] at h  -- h : R * L = 1
+    have key  : (R * L : Module.End K (ℕ → K)) (fun _ => (1 : K)) 0 = 0 := rfl
+    have key2 : (1   : Module.End K (ℕ → K)) (fun _ => (1 : K)) 0 = 1 := rfl
+    rw [h] at key
+    exact one_ne_zero (key2.symm.trans key)
